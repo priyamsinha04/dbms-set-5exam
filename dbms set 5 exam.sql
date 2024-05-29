@@ -50,16 +50,20 @@ INSERT INTO Passenger_info (Pass_id, Pass_name, Pass_city, Pass_DOB,
 Flight_id) VALUES
 ('P005', 'Rahul Kumar', 'Mumbai', TO_DATE('1980-05-10', 'YYYY-MM-DD'), 
 'FL101');
-COMMIT;
+
+
 -- Final select to view all data in both tables
 SELECT * FROM Flight_info;
 SELECT * FROM Passenger_info;
+
 SELECT *
 FROM Passenger_info
 WHERE Flight_id = 'FL101';
+
 SELECT *
 FROM Passenger_info
 WHERE Pass_city = 'Kolkata';
+
 SELECT COUNT(*)
 FROM Passenger_info
 WHERE Flight_id = 'FL102';
